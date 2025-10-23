@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My AirPod | True Wireless Freedom</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f8fa;
+      color: #333;
+    }
+
+    header {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1.8em;
+      letter-spacing: 2px;
+    }
+
+    /* Running text (marquee) */
+    .marquee {
+      background: #e3f2fd;
+      color: #0d47a1;
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 1.1em;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee span {
+      display: inline-block;
+      animation: scroll 15s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Grid layout for images and videos */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      gap: 20px;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .images img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .videos iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    /* Floating WhatsApp button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 0.9em;
+    }
+  </style>
+  <!-- WhatsApp Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    My AirPod
+  </header>
+
+  <div class="marquee">
+    <span>🔥 Experience True Wireless Freedom with My AirPod — Crystal Clear Sound, Long Battery Life, and Sleek Design! 🔥</span>
+  </div>
+
+  <div class="container">
+    <!-- Image Section -->
+    <div class="images">
+      <img src="https://via.placeholder.com/400x300?text=AirPod+Image+1" alt="AirPod Image 1">
+      <img src="https://via.placeholder.com/400x300?text=AirPod+Image+2" alt="AirPod Image 2">
+      <img src="https://via.placeholder.com/400x300?text=AirPod+Image+3" alt="AirPod Image 3">
+      <img src="https://via.placeholder.com/400x300?text=AirPod+Image+4" alt="AirPod Image 4">
+    </div>
+
+    <!-- Video Section -->
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    © 2025 My AirPod. All rights reserved.
+  </footer>
+
+</body>
+</html>
 
